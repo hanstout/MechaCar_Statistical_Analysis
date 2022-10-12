@@ -1,7 +1,13 @@
 # MechaCar_Statistical_Analysis
 ## Linear Regression to Predict MPG (D1)
 ##### Steps: 
-1. 
+1. Download the MechaCar_mpg.csv file, and place it in the active directory for your R session.  
+2. Create a new RScript in your R source pane, name it MechaCarChallenge.RScript, and save it to your active directory.
+3. Use the library() function to load the dplyr package.
+4. Import and read in the MechaCar_mpg.csv file as a dataframe.
+5. Perform linear regression using the lm() function. In the lm() function, pass in all six variables (i.e., columns), and add the dataframe you created in Step 4 as the data parameter.
+6. Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
+7. Save your MechaCarChallenge.RScript file to your GitHub repository.
 ##### Questions: 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?  
 The Vehicle Length and the Ground Clearance variables. This is due to low P-values, showing greater statistical significance when pretaining to mpg values in the dataset.
@@ -9,7 +15,7 @@ The Vehicle Length and the Ground Clearance variables. This is due to low P-valu
 No, the slope is not considered to be zero. This is because the p-value is 5.35e-11 (below 0.05), all coefficents are not zero. The R-value is also closer to 1 than it is 0. See below image. 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?  
 Yes, this model predicts the mpg of MechaCar prototypes is effective due to the adjusted R-squared being 0.6825. Meaning that 68.25% of variation is explained. 
-(IMAGE)
+<img src="MechaCar_Statistical_Analysis/images/D1.png" width="128"/>
 
 ## Summary Statistics on Suspension Coils (D2)
 ##### Steps: 
